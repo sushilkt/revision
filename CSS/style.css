@@ -1,0 +1,58 @@
+.logo{height:2.5rem;
+}
+
+
+.heading {
+  text-align: center;
+  background-color:white;
+}
+
+.heading h1{margin-top: 0;
+margin-bottom: 0;}
+
+
+.navbar {
+  background-color: GREY;
+  padding: 8px;
+}
+
+.selficon {
+  border-radius: 50%;
+  height: 25px;
+}
+header.navbar{padding-top: 0;
+padding-bottom: 0;}
+
+li.nav-item {
+  padding-left: 10px;
+  padding-right: 10PX;
+  color: white;
+  border-style: solid;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
+}
+
+li.nav-item:hover {
+  background-color: Black;
+}
+li.nav-item a{color:white;}
+li.selected-main-list{background-color:dodgerblue;}
+.mainbody{
+  margin-top: 10px;
+}
+.index{
+  border-style: ridge;
+  border-left: 0px;
+  border-bottom: 0px;
+  border-top: 0px;
+}
+.index1{
+position:fixed;
+top 0;}
+.index-list{list-style-type: none;}
+
+.panel-title{
+  background-color: lightgrey;
+
+}
