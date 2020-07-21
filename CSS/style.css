@@ -47,13 +47,13 @@ li.selected-main-list{background-color:dodgerblue;}
   border-left: 0px;
   border-bottom: 0px;
   border-top: 0px;
-  display: inline-block;
   }
-}
-.index1{position:fixed;
-top 0;
+
+
+.index1{
+  position: fixed;
 padding-left:0px;
-padding-right:0px;}
+padding-right:12px;}
 
 .content{
   display:inline-block;
