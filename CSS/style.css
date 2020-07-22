@@ -20,6 +20,11 @@ margin-bottom: 0;}
   border-radius: 50%;
   height: 35px;
 }
+.index-cardicon{float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+height:100px;
+}
 header.navbar{padding-top: 0;
 padding-bottom: 0;}
 
@@ -42,6 +47,13 @@ li.selected-main-list{background-color:dodgerblue;}
 .mainbody{
   margin-top: 10px;
 }
+.index-card
+{margin: 5px;}
+
+
+
+
+
 .index{
   border-style: ridge;
   border-left: 0px;
