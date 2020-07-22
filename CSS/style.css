@@ -20,11 +20,7 @@ margin-bottom: 0;}
   border-radius: 50%;
   height: 35px;
 }
-.index-cardicon{float: left;
-  margin-left: 10px;
-  margin-right: 10px;
-height:100px;
-}
+
 header.navbar{padding-top: 0;
 padding-bottom: 0;}
 
@@ -47,34 +43,33 @@ li.selected-main-list{background-color:dodgerblue;}
 .mainbody{
   margin-top: 10px;
 }
+
+/* ---home page content------------------------------------------------------- */
 .index-card
 {margin: 5px;}
-
-
-
-
-
-.index{
-  border-style: ridge;
-  border-left: 0px;
-  border-bottom: 0px;
-  border-top: 0px;
-  }
-
-
-.index1{
-  position: fixed;
-padding-left:0px;
-padding-right:12px;}
-
-.content{
-  display:inline-block;
+.index-cardicon{float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+height:100px;
 }
 
+/* GMP SITE -------------------------------------------------------------------- */
+/* GMP startegy ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.mainbody{padding-left: 5px;}
+.gmp-index{position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+background-color:yellow;}
+.btn-secondary{background-color:grey;
+border-color:#ff66ff
+color:black;}
 .panel-title{
   background-color: lightgrey;
 }
 
+#stra{
+padding: 10px;}
 .list-c1{list-style-type: square;}
   .list-c2{list-style-type: disc;}
     .list-c3{list-style-type: circle;}
