@@ -52,6 +52,7 @@ li.selected-main-list{background-color:dodgerblue;}
   margin-right: 10px;
 height:100px;
 }
+.card-text{font-size: 1rem;}
 
 /* GMP SITE -------------------------------------------------------------------- */
 /* GMP startegy ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
