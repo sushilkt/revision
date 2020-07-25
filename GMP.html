@@ -136,14 +136,14 @@
                 <li>enviroment : PESTEL (political/Economic/social/technology/enviromental/legal)</li>
                 <li>industry :
                   <ul class="list-c2">
-                    <li>Porter 5 forces:</li>
-                    <ul class="list-c3">
+                    <li><span class="caret">Porter 5 forces:</span>
+                    <ul class="list-c3 nested">
                       <li>Byuer Power</li>
                       <li>Supplier Power</li>
                       <li>Substitute threat</li>
                       <li>New entrant </li>
                       <li>Industry rivalry</li>
-                    </ul>
+                    </ul></li>
                     <li>structure: monopoly/duoploy </li>
                     <li>conduct</li>
                     <li>performance</li>
@@ -233,40 +233,40 @@
             <div class="panel-body">
               This is part of corporate strategy and hence leadership involvement is must, these decison are very risky .
               <ol>
-                <li>Product Vs Market / <a href="https://en.wikipedia.org/wiki/Ansoff_Matrix" target="_blank"><em>Ansoff Matrix</em></a></li>
-                <ul class="list-c2">
+                <li><span class="caret">Product Vs Market / </span> <a href="https://en.wikipedia.org/wiki/Ansoff_Matrix" target="_blank"><em>Ansoff Matrix</em></a>
+                <ul class="list-c2 nested">
                   <li>Market: existing / Product Existing : Market Penetration</li>
                   <li>Market: existing / Product New      : Product Development</li>
                   <li>Market: New / Product Existing      : Marekt Development </li>
                   <li>Market: New / Product New           : Diversification </li>
 
-                </ul>
+                </ul></li>
                 <li>Divest / Invest / Sustain:</li>
                 <ul class="list-c2">
-                  <li>Parenting Matrix{usefull for M&A}</li>
-                  <ul class="list-c3">
+                  <li><span class="caret">Parenting Matrix{usefull for M&A} </span>
+                  <ul class="list-c3 nested">
                     <li>ability-to-add-value VS opportunity-to-add value</li>
                     <li>ability-H / Opportunity-H :Heartland</li>
                     <li>ability-H / Opportunity-L :Ballast</li>
                     <li>ability-L / Opportunity-H :Value Trap</li>
                     <li>ability-L / Opportunity-L :Alien Teritory</li>
-                  </ul>
-                  <li>GE/MAckinsey Matrix{ more usefull in market/product}</li>
-                  <ul class="list-c3">
+                  </ul></li>
+                  <li><span class="caret">GE/MAckinsey Matrix{ more usefull in market/product}</span>
+                  <ul class="list-c3 nested">
                     <li>Industry Attractivness VS Buisness Strength</li>
                     <li>Attractive-H / Strength-H:Grow/Invest</li>
                     <li>Attractive-H / Strength-L:build selectively</li>
                     <li>Attractive-L / Strength-H:Protect/HOld</li>
                     <li>Attractive-L / Strength-L:Harvest/Divest</li>
-                  </ul>
-                  <li>BCG Matrix</li>
-                  <ul class="list-c3">
+                  </ul></li>
+                  <li><span class="caret">BCG Matrix</span>
+                  <ul class="list-c3 nested">
                     <li>Market-Growth-Rate VS Market-Share</li>
                     <li>Growth-H / Share-H:Star: both cash generator and cash user</li>
                     <li>Growth-H / Share-L:Question Mark</li>
                     <li>Growth-L / Share-H:Cow:Milk</li>
                     <li>Growth-L / Share-L:Dog</li>
-                  </ul>
+                  </ul></li>
                 </ul>
                 <li>Capture New market (Blue Ocean)</li>
                 <li>New Country</li>
@@ -277,14 +277,14 @@
                     <li>Aggregation</li>
                     <li>Arbitrage</li>
                   </ul>
-                  <li>Culture difference </li>
-                  <ul class="list-c3">
+                  <li><span class="caret">Culture difference</span>
+                  <ul class="list-c3 nested">
                     <li>Short term VS Long term</li>
                     <li>Uncertaininty avoidance</li>
                     <li>Individualistic VS Collectism</li>
                     <li>Power Distance</li>
                     <li>Restrain VS Indulgence</li>
-                  </ul>
+                  </ul></li>
 
               </ol>
             </div>
@@ -340,7 +340,17 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script>
+  var toggler = document.getElementsByClassName("caret");
+  var i;
 
+  for (i = 0; i < toggler.length; i++) {
+    toggler[i].addEventListener("click", function() {
+      this.parentElement.querySelector(".nested").classList.toggle("active");
+      this.classList.toggle("caret-down");
+    });
+  }
+  </script>
 </body>
 
 </html>
