@@ -74,8 +74,20 @@ li.selected-main-list{background-color:dodgerblue;}
 /* index page content styling  */
 .indexcontent{
   text-align: center;
+
+
 }
-.indextopicbtn{background-color: grey;
+.indexhr{
+  width: 10rem;
+  color: #3e4444;
+  border-top: 3px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-style: dotted;
+  border-color: #3e4444;
+}
+.indextopicbtn{background-color: #3e4444;
 margin: 10px;
 width: 15rem;
 border-color: white;}
@@ -126,7 +138,10 @@ border-color: white;}
 height:100px;
 }
 .card-text{font-size: 1rem;}
-
+.indexcontent{
+  margin-top:5px;
+  margin-bottom: 5px;
+}
 #index1{}
   #index2{}
 
