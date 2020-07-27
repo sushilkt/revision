@@ -13,65 +13,57 @@
 
 
 <body>
-  <div class="container-fluid heading">
-
-    <h1> <img class="logo" src="images/revision.png" alt="logo"><em>REVISION</em></h1>
-    <em>“every cut is necessary, and every cut hurts, but something new always grows.”</em>
+  <!-- heading start+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <div class="heading-image">
+  <div class="heading-text">
+    <h1><em>REVISION</em></h1>
   </div>
+  </div>
+  <!-- heading end ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-  <header class="navbar navbar-expanded navbar-dark flex-column flex-md-row bd-nvbar">
-    <div class="navbar-nav-scroll">
+  <!-- top bar starts here  -->
+  <div class="icon-bar">
 
-      <ul class="navbar-nav bd-navbar-nav flex-row">
-        <li class="nav-item"><a href="index.html"><h4>MAIN</h4></a></li>
-        <li class="nav-item selected-main-list"><a href="GMP.html"><h4>GMP</h4></a></li>
-        <li class="nav-item selected-main-list"><a href="GMP.html">
-          <h5>Strategy</h5>
-          </a></li>
-        <li class="nav-item"><a href="GMPfinance.html">
-            <h5>Finance</h5>
-          </a></li>
-        <li class="nav-item"><a href="GMPstatsdata.html">
-            <h5>Stat&Data</h5>
-          </a></li>
-        <li class="nav-item"> <a href="GMPmarketing.html">
-            <h5>Marketing</h5>
-          </a></li>
-        <li class="nav-item"> <a href="GMPoperation.html">
-            <h5>Operation</h5>
-          </a></li>
-        <li class="nav-item"> <a href="GMPhrlegal.html">
-            <h5>HR&Legal</h5>
-          </a></li>
-        <li class="nav-item"> <a href="GMPsustain.html">
-            <h5>Sustainbility</h5>
-          </a></li>
-      </ul>
-    </div>
+    <a href="index.html"><i class="fa fa-home"></i></a>
+    <button class="openbtn" onclick="openNav()">☰ GMP</button>
+    <a class="active" href="GMP.html">Strategy</a>
+    <button class="openbtn" onclick="openNav1()">index ></button>
+    </button>
 
-  </header>
+
+  </div>
+  <!-- top bar ends here -->
+  <!-- sidebar start GMP -->
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="GMP.html">Strategy</a>
+  <a href="GMPfinance.html">Finance</a>
+  <a href="GMPstatsdata.html">Stat&Data</a>
+  <a href="GMPmarketing.html">Marketing</a>
+  <a href="GMPoperation.html">Operation</a>
+  <a href="GMPhrlegal.html">HR&Legal</a>
+  <a href="GMPsustain.html">Sustainbility</a>
+</div>
+<!-- sidebar gMP ends here -->
+<!-- sidebar index starts here -->
+<div id="mySidebar2" class="sidebar1">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">×</a>
+<a href="#gmp-stra-head1">Introduction</a>
+<a href="#gmp-stra-head2">Defining business</a>
+<a href="#gmp-stra-head3">Situtaion Analysis</a>
+<a href="#gmp-stra-head4">Customer segmentation target</a>
+<a href="#gmp-stra-head5">Competetive advantages</a>
+<a href="#gmp-stra-head6">Growth Direction</a>
+<a href="#gmp-stra-head7">Implementation review</a>
+</div>
+<!-- sidebar index ends here  -->
+
+  <!-- sidebar ends -->
 
 
   <!-- main body+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <div class="mainbody box-responsive">
-    <!-- index sarts +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    <div class="gmp-index box-responsive ">
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <em> STRATEGY :</em>Index
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#gmp-stra-head1">Introduction</a>
-          <a class="dropdown-item" href="#gmp-stra-head2">Defining business</a>
-          <a class="dropdown-item" href="#gmp-stra-head3">Situtaion Analysis</a>
-          <a class="dropdown-item" href="#gmp-stra-head4">Customer segmentation target</a>
-          <a class="dropdown-item" href="#gmp-stra-head5">Competetive advantages</a>
-          <a class="dropdown-item" href="#gmp-stra-head6">Growth Direction</a>
-          <a class="dropdown-item" href="#gmp-stra-head7">Implementation review</a>
-        </div>
-      </div>
-    </div>
-    <!-- index ends +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
     <!-- matter begins+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <div class="subject box-responsive" id="stra">
 <!-- first heading++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -351,6 +343,33 @@
     });
   }
   </script>
+  <!-- sidebar scripty strat -->
+  <script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function openNav1() {
+  document.getElementById("mySidebar2").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+function closeNav1() {
+  document.getElementById("mySidebar2").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+
+  </script>
+
+  <!-- sidebar script end -->
 </body>
 
 </html>
