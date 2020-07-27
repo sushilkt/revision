@@ -11,36 +11,51 @@
 
 
 <body>
-  <div class="container-fluid heading">
+  <!-- heading start+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <div class="heading-image">
+  <div class="heading-text">
+    <h1><em>REVISION</em></h1>
+  </div>
+  </div>
+  <!-- heading end ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-      <h1> <img class="logo"src="images/revision.png" alt="logo"><em>REVISION</em></h1>
-      <em>“every cut is necessary, and every cut hurts, but something new always grows.”</em>
+  <!-- top bar starts here  -->
+  <div class="icon-bar">
+    <a href="index.html"><i class="fa fa-home"></i></a>
+    <button class="openbtn" onclick="openNav()">☰ Metallurgy</button>
+  </div>
+  <!-- top bar ends here -->
+  <!-- sidebar start GMP -->
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="GMP.html">Introduction</a>
+
   </div>
 
-<header class="navbar navbar-expanded navbar-dark flex-column flex-lg-row bd-nvbar">
-  <div class="navbar-nav-scroll">
-
-    <ul class="navbar-nav bd-navbar-nav flex-row">
-      <li class="nav-item"><a href="index.html"><h4>MAIN</h4></a></li>
-      <li class="nav-item"><a href="GMP.html"><h4>GMP</h4></a></li>
-      <li class="nav-item"><a href="elec.html"><h4>ELEC</h4></a></li>
-      <li class="nav-item selected-main-list"><a href="meta.html"><h4>META</h4></a></li>
-      <li class="nav-item"><a href="process.html"><h4>PROCESS</h4></a></li>
-        <li class="nav-item"> <a href="Others.html"><h4>RANDOM</h4></a></li>  </ul>
-</div>
-<ul class="navbar-nav ml-lg-auto flex-row">
-  <li class="nav-item"> <a href="https://drive.google.com/drive/folders/1ryuuIRtqJzE66d7TTD8BIT3a2TD4kbBi?usp=sharing"><img class="selficon" src="https://img.icons8.com/fluent/48/000000/google-drive.png"/></a></li>
-  <li class="nav-item"><a href="https://sushilkt.github.io/CV/"> <img class="selficon"src="images/sushil.jpg" alt="sushil" style></a></li>
-
-</ul>
-</header>
+  <!-- sidebar index ends here  -->
+  <!-- sidebar ends -->
 <h1>under construction</h1>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <!-- sidebar scripty strat -->
+  <script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
 
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+  </script>
+
+  <!-- sidebar script end -->
 </body>
 
 </html>

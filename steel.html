@@ -11,45 +11,41 @@
 
 
 <body>
-  <div class="container-fluid heading">
-
-      <h1> <img class="logo"src="images/revision.png" alt="logo"><em>REVISION</em></h1>
-      <em>“every cut is necessary, and every cut hurts, but something new always grows.”</em>
+  <!-- heading start+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <div class="heading-image">
+  <div class="heading-text">
+    <h1><em>REVISION</em></h1>
   </div>
+  </div>
+  <!-- heading end ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-<header class="navbar navbar-expanded navbar-dark flex-column flex-lg-row bd-nvbar">
-  <div class="navbar-nav-scroll">
+  <!-- top bar starts here  -->
+  <div class="icon-bar">
+    <a href="index.html"><i class="fa fa-home"></i></a>
+    <button class="openbtn" onclick="openNav()">☰ Steel Industry</button>
 
-    <ul class="navbar-nav bd-navbar-nav flex-row">
-      <li class="nav-item"><a href="index.html"><h4>MAIN</h4></a></li>
-            <li class="nav-item selected-main-list"><h4>RANDOM</h4></li>
-           </ul>
+  </button>
+  </div>
+  <!-- top bar ends here -->
+  <!-- sidebar start GMP -->
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a  href="#othersTS0">Steel industry</a>
+  <a  href="#othersTS1">Financial</a>
+  <a  href="#othersTS2">Business</a>
+  <a  href="#othersTS3">Risk</a>
+  <a  href="#othersTS4">Customer</a>
+  <a  href="#othersTS5">Internal</a>
+  <a  href="#othersTS6">Growth Direction</a>
+  <a  href="#othersTS7">Sustainbility</a>
+</div>
 
-</header>
+  <!-- sidebar ends -->
 
 
 <!-- main body+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <div class="mainbody box-responsive">
-  <!-- index sarts +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <div class="gmp-index box-responsive ">
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <em>TSTEEL :</em>Index
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#othersTS0">Steel industry</a>
-        <a class="dropdown-item" href="#othersTS1">Financial</a>
-        <a class="dropdown-item" href="#othersTS2">Business</a>
-        <a class="dropdown-item" href="#othersTS3">Risk</a>
-        <a class="dropdown-item" href="#othersTS4">Customer</a>
-        <a class="dropdown-item" href="#othersTS5">Internal</a>
-        <a class="dropdown-item" href="#othersTS6">Growth Direction</a>
-        <a class="dropdown-item" href="#othersTS7">Sustainbility</a>
-      </div>
-    </div>
-  </div>
-  <!-- index ends +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-  <!-- matter begins+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
   <div class="subject box-responsive">
 <!-- first heading++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 <div class="panel-group" id="othersTS0">
@@ -249,6 +245,22 @@
     });
   }
   </script>
+  <!-- sidebar scripty strat -->
+  <script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+  </script>
+
+  <!-- sidebar script end -->
 </body>
 
 </html>

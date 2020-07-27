@@ -97,7 +97,7 @@ border-color: white;}
 /* Create the caret/arrow with a unicode, and style it */
 .caret::after {
   content:"\25B7";
-  color: black;
+  color: blue;
   display: inline-block;
   margin-right: 6px;
 }
