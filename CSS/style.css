@@ -10,7 +10,7 @@
   height: 8rem;
 }
 @media screen and (max-height: 450px) {
-  .heading-image{height:4rem;}
+  .heading-image{height:2rem;}
 
 }
 .heading-text {
@@ -270,10 +270,9 @@ border-color: white;
 
 #stra{
 padding: 10px;}
-.panel-title{color:grey;}
+.panel-title a{color:grey;}
 @media screen and (max-height: 450px) {
-  .panel-title{font-size: 1.2rem;
-  color:grey;}
+  .panel-title{font-size: 0.5rem;}
 
 }
 .list-c1{list-style-type: square;}
