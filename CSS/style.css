@@ -1,5 +1,5 @@
 /* heading strat */
-.heading-image{
+.heading-image,.heading-image1{
   background-image: url("images/background1.png");
   background-image: url("https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-color: red;
@@ -8,6 +8,9 @@
   background-size: cover;
   position: relative;
   height: 8rem;
+}
+@media screen and (max-height: 450px) {
+  .heading-image{height:4rem;}
 
 }
 .heading-text {
@@ -48,28 +51,7 @@
   height: 35px;
 }
 
-header.navbar{padding-top: 0;
-padding-bottom: 0;}
 
-li.nav-item {
-  padding-left: 10px;
-  padding-right: 10PX;
-  color: white;
-  border-style: solid;
-  border-top: 0;
-  border-bottom: 0;
-  border-right: 0;
-
-}
-
-li.nav-item:hover {
-  background-color: Black;
-}
-li.nav-item a{color:white;}
-li.selected-main-list{background-color:dodgerblue;}
-.mainbody{
-  margin-top: 10px;
-}
 /* index page content styling  */
 .indexcontent{
   text-align: center;
@@ -288,8 +270,12 @@ border-color: white;
 
 #stra{
 padding: 10px;}
+.panel-title{color:grey;}
+@media screen and (max-height: 450px) {
+  .panel-title{font-size: 1.2rem;
+  color:grey;}
 
-#stra a{color:grey;}
+}
 .list-c1{list-style-type: square;}
   .list-c2{list-style-type: disc;}
     .list-c3{list-style-type: circle;}
