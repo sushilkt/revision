@@ -10,7 +10,7 @@
   height: 8rem;
 }
 @media screen and (max-width: 768px) {
-  .heading-image{height:2rem;}
+  .heading-image{height:4rem;}
 
 }
 .heading-text {
@@ -270,20 +270,32 @@ border-color: white;
 /* main contnet block styling start */
 #stra{
 padding: 10px;}
-/* for mobile */
-@media screen and (max-width: 768px) {
-  #stra{padding-left: 5px;}
-  .ul{padding-left: 2px;}
-  .ol{padding left:5px;}
+@media screen and (max-height: 450px)
+ {
+  #stra{padding-left:0px;}
+  }
 
-}
-/* mail contet block styling end  */
+
 
 .panel-title a{color:grey;}
-@media screen and (max-height: 450px) {
+/* for mobile */
+@media screen and (max-widt: 760px)
+ {
   .panel-title{font-size: 1.2rem;}
+  }
+  /* for content bdy */
+.panel-body ol{padding-left:20px;}
+.panel-body ul{padding-left:10px;}
+.panel-body p{margin-bottom: 5px;}
 
-}
+/* main contet block styling end  */
+
+
+
+
+
+
+
 .list-c1{list-style-type: square;}
   .list-c2{list-style-type: disc;}
     .list-c3{list-style-type: circle;}
