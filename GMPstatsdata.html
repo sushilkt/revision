@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/ce0b8ad1f4.js"></script>
   <link rel="stylesheet" href="CSS/style.css">
+  <!-- script for maths  -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+<!-- math script ends -->
 </head>
 
 
@@ -57,24 +61,7 @@
 
   <!-- main body+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <div class="mainbody box-responsive">
-    <!-- index sarts +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-    <div class="gmp-index box-responsive ">
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <em>STATS & ANALYTICS :</em>Index
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#gmp-stra-head1">Introduction</a>
-          <a class="dropdown-item" href="#gmp-stra-head2">Defining business</a>
-          <a class="dropdown-item" href="#gmp-stra-head3">Situtaion Analysis</a>
-          <a class="dropdown-item" href="#gmp-stra-head4">Customer segmentation target</a>
-          <a class="dropdown-item" href="#gmp-stra-head5">Competetive advantages</a>
-          <a class="dropdown-item" href="#gmp-stra-head6">Growth Direction</a>
-          <a class="dropdown-item" href="#gmp-stra-head7">Implementation review</a>
-        </div>
-      </div>
-    </div>
-    <!-- index ends +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
     <!-- matter begins+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <div class="subject box-responsive" id="stra">
 <!-- first heading++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -128,7 +115,74 @@
             <div class="panel-body">
               <!-- text 2 starts++++++++++++++++++++++++++++++++++++++++++++++++++ -->
               <ol>
+                <li> <span class="caret"> symbols</span>
+                  <table class="table nested">
+                    <tr>
+                      <th>measure</th>
+                      <th>poulation</th>
+                      <th>sample</th>
+                    </tr>
+                    <tr>
+                      <td>size</td>
+                      <td>N</td>
+                      <td>n</td>
+                    </tr>
+                    <tr>
+                      <td>means</td>
+                      <td>	&mu;</td>
+                      <td> X&#772 </td>
 
+                    </tr>
+                    <tr>
+                      <td>Std dev</td>
+                      <td>&sigma;</td>
+                      <td> S </td>
+
+                    </tr>
+                  </table>
+                </li>
+                <li> <span class="caret">CLT , central limit theorem</span>
+                 </li>
+                 <li> <span class="caret">Estimation from sample</span>
+                   <table class=" table nested">
+                     <tr>
+                       <th>Population &sigma;</th>
+                       <th>sample condition</th>
+                       <th>n/N >0.05 (Population finite)</th>
+                       <th>n/N < 0.05 (population infinite)</th>
+                       <th>fomula</th>
+                     </tr>
+                     <tr>
+                       <td> known</td>
+                       <td>30>n>30</td>
+                       <td>\[&sigma;&#770;= {&sigma;\over \sqrt{n}}*\sqrt{(N-n)\over(N-1)}  \]</td>
+                       <td>\[ &sigma;&#770;= {&sigma;\over \sqrt{n}} \]</td>
+                       <td>\[ &mu;= x&#772; \pm  z* &sigma;&#770; \]  </td>
+
+                     </tr>
+                     <tr>
+                       <td rowspan="2">not known <br> use S in place of &sigma;<br> \[s=\sqrt{\sum_{i=1}^n (x_i-x)^2 \over (n-1)} \]</td>
+                       <td>n > 30 </td>
+                       <td> \[&sigma;&#770;= {s\over \sqrt{n}}*\sqrt{(N-n)\over(N-1)}  \]</td>
+                       <td> \[ &sigma;&#770;= {s\over \sqrt{n}} \]</td>
+                       <td> \[ &mu;= x&#772; \pm  z* &sigma;&#770; \] </td>
+                     </tr>
+                     <tr>
+
+                       <td>n < 30 , use t in place of z<br> when polpulation is normal or near normal </td>
+                       <td> complex problem </td>
+                       <td> \[ &sigma;&#770;= {s\over \sqrt{n}} \]  </td>
+                       <td> \[ &mu;= x&#772; \pm  t* &sigma;&#770; \]</td>
+                     </tr>
+                     <tr>
+                      <td> calculating propotion</td>
+                       <td>n > 30 <br>  </td>
+                       <td> complex problem </td>
+                       <td> \[ &sigma;&#770;= \sqrt{p*q\over n} \] </td>
+                       <td> \(P(population)= p(sample)\pm z * &sigma;&#770; \)</td>
+                     </tr>
+                   </table>
+                  </li>
               </ol>
               <!-- text 2 end ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
             </div>
@@ -157,7 +211,7 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" href="#collapse4">CHI-Square and avriance analysis</a>
+              <a data-toggle="collapse" href="#collapse4">CHI-Square and variance analysis</a>
             </h4>
           </div>
           <div id="collapse4" class="panel-collapse collapse">
@@ -174,7 +228,7 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" href="#collapse5">USe of Stats ,decision theory</a>
+              <a data-toggle="collapse" href="#collapse5">Use of Stats ,decision theory</a>
             </h4>
           </div>
           <div id="collapse5" class="panel-collapse collapse">
@@ -214,7 +268,58 @@
           <div id="collapse7" class="panel-collapse collapse">
             <div class="panel-body">
               <!-- text 7 strats here ++++++++++++++++++++++++++++++++++++++++ -->
-              text 7
+              <ul>
+                <li> <span class="caret">theory</span>
+                <ul class="nested">
+                  <li> <math>
+                    Y= m <sub>1</sub>.x <sub>1</sub>+m <sub>2</sub>.x <sub>2</sub>+m <sub>3</sub>.x <sub>3</sub>+.....+C
+                  </math></li>
+                  <li>Y is dependent variable , X is independent variable </li>
+                  <li> only co-relation is not enough for regression</li>
+                  <li>Regression= co-relation + causality (explained relationship)</li>
+
+                  <li>in regression limit is important ,as Y =mx+c will hold valid only for certain range . eg age vs height is valid only till certain age .</li>
+<img width="50%" src="images/Lregression.jpg" alt="regression">
+                    <li>SST: totoal error / SSR:error from average to regression / SSE: error of y from regression</li>
+                    <li>SST=SSR+SSE (SS:sum of square / T:total /E:error /R:regression)</li>
+                    <li> <math>R <sup>2</sup>  =SSR/SSR</math> so Rsqure is ,what % of variation ,from average, is explained by model</li>
+                    <li>also  <math>R <sup>2</sup>  =1-SSE/SST</math></li>
+
+
+
+
+                </ul>
+              </li>
+                <li> <span class="caret">Interpreting result</span>
+                  <ol class="nested">
+                    <li>p value less than 0.05 is <em>significant</em> </li>
+                    <li>F test P value : if P less than 0.05 then y depends on atleast one of X </li>
+                      <li>check form plot wheter resuduals is normal and has no pattern</li>
+                                            <li>indiviudla X , t test p value : p less than 0.05, then y depends on that x</li>
+                      <li>if none of x has p value lesss tha 0.05 but overall f test is sigificant , then y depends on combinaition of x, i.e multiple x are related  </li>
+                    <li>corelation of multiple x can be tested by corelation or VIF score</li>
+                    <li> <span class="caret">VIF: variance influence factor </span>
+                      <ul class="nested">
+                        <li>VIF=1/(1-Rsqaure)</li>
+                        <li>Rsq is taken between variable, to know correlation among variable  </li>
+                        <li>take one variable as y and find regression with remaining x</li>
+                        <li>less VIF means less relation and hence variable are independednt</li>
+                        <li>VIF of less than 5 is good </li>
+                        <li>variable with more VIF score to be dropped</li>
+                      </ul> </li>
+
+                    <li>R2 score :s perecentage of data explained by regression , more R2 is not always better </li>
+                    <li>adding more varaible wil always increase R2 , so adjuested R2 value is better </li>
+                    <li> <span class="caret"> Till when to add variable </span>
+                    <ol class="nested">
+                      <li>with more X , Rsq increases, but Rsq-adjusted increases then decreases , cutoff is max Rsq-adjusted value</li>
+                      <li>forward selection: go on adding variable according to correlation ,till Rsq-adjusted is max</li>
+                      <li>Backward elimination : start with all X , then drop starting with least relted x, stop when Rsq-adjusted is max</li>
+                    </ol> </li>
+                  </ol>
+                </li>
+
+              </ul>
               <!-- text 7 eds here ++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
             </div>
           </div>
@@ -283,6 +388,23 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <!-- for tree list -->
+    <script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+    </script>
+    <!-- tree list ends -->
+
+
+
+
   <!-- sidebar scripty strat -->
   <script>
 function openNav() {

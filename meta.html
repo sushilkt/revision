@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Revision</title>
-<link rel="icon" href="bookmark.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Revision</title>
+  <link rel="icon" href="bookmark.png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/ce0b8ad1f4.js"></script>
   <link rel="stylesheet" href="CSS/style.css">
@@ -14,49 +15,420 @@
 <body>
   <!-- heading start+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   <div class="heading-image">
-  <div class="heading-text">
-    <h1><em>REVISION</em></h1>
-  </div>
+    <div class="heading-text">
+      <h1><em>REVISION</em></h1>
+    </div>
   </div>
   <!-- heading end ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
   <!-- top bar starts here  -->
   <div class="icon-bar">
     <a href="index.html"><i class="fa fa-home"></i></a>
-    <button class="openbtn" onclick="openNav()">☰ Metallurgy</button>
+    <button class="openbtn" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+    <a class="active1" href="meta.html">Metallurgy</a>
+    <button class="openbtn" onclick="openNav1()">index &#9655;</button>
   </div>
   <!-- top bar ends here -->
   <!-- sidebar start GMP -->
   <div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="GMP.html">Introduction</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="GMP.html">GMP</a>
+    <a href="elec.html">Electrical</a>
+    <a href="meta.html">Metallurgy</a>
+    <a href="steel.html">Steel industry</a>
+    <a href="Process.html">Process</a>
 
   </div>
 
   <!-- sidebar index ends here  -->
+  <!-- sidebar index starts here -->
+  <div id="mySidebar2" class="sidebar1">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">×</a>
+    <a href="#meta0">Steel theory</a>
+    <a href="#meta1">rolling</a>
+    <a href="#meta2">long quality</a>
+    <a href="#meta3">flat quality</a>
+    <a href="#meta4">furnace</a>
+    <a href="#meta5">Rusting</a>
+    <a href="#meta6">extra</a>
+    <a href="#meta7">extra</a>
+  </div>
+  <!-- sidebar index ends here  -->
   <!-- sidebar ends -->
-<h1>under construction</h1>
+  <div class="mainbody box-responsive">
+
+    <div class="subject box-responsive">
+      <!-- first heading++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+      <div class="panel-group" id="stra">
+        <div class="panel panel-default" id="meta0">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapse0">Steel theory</a>
+            </h4>
+          </div>
+          <div id="collapse0" class="panel-collapse collapse">
+            <div class="panel-body">
+              <!-- text1 starts -->
+              steel properties varies hugely with , lattice structure , carbon % and other additive materials .
+              this is major advantage of steel. FOllowing articles capture the effect .
+              <ol>
+                <li><span class="caret">Steel types</span>
+                  <ul class="list-c2 nested">
+                    <li>c% 0-2: steel</li>
+                    <li>C% 2-4: cast iron</li>
+                    <li>C% 4-5: pig iron</li>
+                    <li>C% 5-6: cementite(iron carbide)</li>
+                  </ul>
+                </li>
+                <li><span class="caret">Iron-Carbon diagram</span>
+                  <ul class="list-c2 nested">
+                    <li>importance :diagram expalin following three related things </li>
+                    <ul class="list-c3">
+                      <li>Fe lattice structure (BCC/FCC)decides amount of carbon it can hold </li>
+                      <li>Fe lattice structure (BCC/FCC) changes with temperature</li>
+                      <li>Fe latice structure, change temperaure ,depends on amount of carbon it has </li>
+                      <li>iron crabon doesnot explain time effect , i.e changeswhen cooled fast like tempering</li>
+                    </ul>
+                    <li> <span class="caret"><em>DIAGRAM</em></span>
+                      <img width="90%" class="nested" src="images/ironcarbonphase.jpg" alt="iron carbon diagram">
+                    </li>
+                    <li>Impotant points</li>
+                    <ul class="list-c3">
+                      <li> <span class="caret">forms of iron :Delta/Gamma (austenite)/ Aplha(ferrite). more details</span>
+                        <table class="nested table">
+                          <tr>
+                            <th>symbol</th>
+                            <th>name</th>
+                            <th>temperature at 0%C</th>
+                            <th>structure</th>
+                            <th>max C %</th>
+                          </tr>
+                          <tr>
+                            <td>δ delta</td>
+                            <td>Ferrite</td>
+                            <td>above aprox1400 </td>
+                            <td>BCC</td>
+                            <td>0.08%</td>
+                          </tr>
+                          <tr>
+                            <td>γ gamma</td>
+                            <td>austenite</td>
+                            <td>above aprox912 </td>
+                            <td>FCC</td>
+                            <td>2.14%</td>
+                          </tr>
+                          <tr>
+                            <td>α alpha</td>
+                            <td>ferrite</td>
+                            <td>below 912 </td>
+                            <td>BCC</td>
+                            <td>0.8%</td>
+                          </tr>
+                          <tr>
+                            <td>Fe3C </td>
+                            <td>Cementite</td>
+                            <td>normal temp</td>
+                            <td>BCC</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>~</td>
+                            <td>Pearlite</td>
+                            <td>normal temp </td>
+                            <td>cementite+ferrite</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>~</td>
+                            <td>Martensite</td>
+                            <td>Quenching</td>
+                            <td>BCC</td>
+                            <td>stressed structure</td>
+                          </tr>
+                          <tr>
+                            <td>~</td>
+                            <td>Bainite</td>
+                            <td>Tempering</td>
+                            <td>cementite+ferrite+some martensite</td>
+                            <td>stable</td>
+                          </tr>
+                        </table>
+                      </li>
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                <li>FCC structure can hold more carbon than BCC structure </li>
+                <li>there are other arrangement even in BCC eg: orthhdral/ </li>
+                <li>Alloy steel elements such as nickel, manganese, chromium, and molybdenum affect the position of these boundaries on the phase diagram.
+                  The boundaries may shift in either direction depending on the element used. For example, in the iron carbon phase diagram,
+                  addition of nickel lowers the A3 boundary while the addition of chromium raises it</li>
+                <li>Eutectic Point:Eutectic point is a point where multiple phases meet. For the iron-carbon alloy diagram, the eutectic point is where the lines A1, A3 and ACM meet.
+                  The formation of these points is coincidental.
+                  At these points, eutectic reactions take place where a liquid phase freezes into a mixture of two solid phases.
+                  This happens when cooling a liquid alloy of eutectic composition all the way to its eutectic temperature.</li>
+                </ul>
+                <li> <span class="caret">Trivial points</span>
+                  <ul class="list-c3 nested">
+                    <li>thermal arrest:Normally, when heating an alloy, its temperature increases.
+                      But along these lines (A1, A2, A3, A4, and ACM) the heating results in a realignment of the structure into a different phase and thus,
+                      the temperature stops increasing until the phase has changed completely</li>
+
+                  </ul>
+                </li>
+
+                </ul>
+                </li>
+                <li><span class="caret">TTT diagram (time temperature transformation)</span>
+
+                  <ul class="list-c2 nested">
+                    <p>TTT gives kinetic of isothermal transformation. it is <em>temperature</em> vs <em>log of time</em> of certain composition <br>
+                    <a href="https://www.tf.uni-kiel.de/matwis/amat/iss/kap_8/illustr/s8_4_3c.html"><em>Interesting read link</em> </a> </p>
+                    <li> <span class="caret">Diagram</span>
+                      <img width="60%"class="nested" src="images/metattt.jpg" alt="ttt diagram">
+                      </li>
+                      <li>important points</li>
+                      <ul>
+                        <li>there are two curves(light blue color ) for process start and process end </li>
+                        <li>martensite start and end is instantaneous ,speed of sound</li>
+                        <li>can explaing different process like , quenching /tempering/martempering/austempering</li>
+                        <li></li>
+                      </ul>
+
+                  </ul>
+                </li>
+
+              </ol>
+              <!-- text1 ebds -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="panel-group" id="stra">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapse1">Hot Rolling</a>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse">
+            <div class="panel-body">
+              <!-- text1 starts -->
+              <ol>
+                <li>trends </li>
+                <li>loan</li>
+                <li>ratio</li>
+                <li></li>
+              </ol>
+              <!-- text1 ebds -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- heading 2++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+      <div class="panel-group" id="stra">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapse2">Quality</a>
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">
+              <!-- text 2 starts++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+              <ul>
+                <li> <span class="caret"> Long products parameter </span>
+<ol class="nested">
+  <li> <span class="caret"> Physical </span>
+  </li>
+  <li> <span class="caret"> Chemistry </span>
+  </li>
+</ol>
+</li>
+<li><span class="caret"> Long products defects </span>
+<ol class="nested">
+  <li>fish tail</li>
+  <li> wish rib out</li>
+</ol>
+</li>
+<li><span class="caret"> Rusting </span>
+<ol class="nested">
+  <li>theory</li>
+  <li>solutions</li>
+</ol>
+</li>
+
+
+
+</ul>
+
+
+              <!-- text 2 end ++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- heading3+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+      <div class="panel-group" id="stra">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapse3">Furnace</a>
+            </h4>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body">
+              <!-- text 3 starts++++++++++++++++++++++++++++++++++++++++++++ -->
+              <ul class="list-c1">
+                <li> <span class="">types    </span>
+<ul class="list-c2 nested">
+  <li> <span class="caret"> based on fuel </span>
+    <ul class="list-c3 nested ">
+      <li> CO (coke oven ): calorific value 4000 KCAL</li>
+      <li>mixed gas       : calorific value </li>
+    </ul>
+    </li>
+    <li> <span class="caret"> based on mechanism </span>
+      <ul class="nested">
+<li>walking beam </li>
+<li>walking heart</li>
+<li>pusher </li>
+      </ul>
+     </li>
+</ul>
+                </li>
+                <li>zones</li>
+                <li>burners</li>
+                <li>operation modes </li>
+                <li>instruments </li>
+                <li>important parametrs </li>
+                <li>safety</li>
+
+              </ul>
+              <!-- text 3 ends+++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- heading 4++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+      <div class="panel-group" id="stra">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapse4"></a>
+            </h4>
+          </div>
+          <div id="collapse4" class="panel-collapse collapse">
+            <div class="panel-body">
+              <!-- text 4 starts++++++++++++++++++++++++++++++++++++++++++++++++ -->
+              text 4
+              <!-- text 4 ends +++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- heading5+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+      <div class="panel-group" id="stra">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapse5">headig 5</a>
+            </h4>
+          </div>
+          <div id="collapse5" class="panel-collapse collapse">
+            <div class="panel-body">
+              <!-- text 5 starts+++++++++++++++++++++++++++++++++++++++++++++++c -->
+              text 5
+              <!-- text 5 ends ++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- heading6+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+      <div class="panel-group" id="stra">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapse6">heading 6</a>
+            </h4>
+          </div>
+          <div id="collapse6" class="panel-collapse collapse">
+            <div class="panel-body">
+              <!-- text 6 starts+++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+              text 6
+              <!-- text 6 ends here ++++++++++++++++++++++++++++++++++++++++++++ -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- heading 7++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+      <div class="panel-group" id="othersTS7">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapse7">heading 7 </a>
+            </h4>
+          </div>
+          <div id="collapse7" class="panel-collapse collapse">
+            <div class="panel-body">
+              <!-- text 7 strats here ++++++++++++++++++++++++++++++++++++++++ -->
+              text 7
+              <!-- text 7 eds here ++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+            </div>
+          </div>
+        </div>
+      </div>
+      -------------------------------------------------------------------------------
+    </div>
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <!-- for tree list -->
+  <script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+  </script>
+  <!-- tree list ends -->
+
+
+
   <!-- sidebar scripty strat -->
   <script>
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function openNav1() {
+      document.getElementById("mySidebar2").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
 
 
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
 
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+
+    function closeNav1() {
+      document.getElementById("mySidebar2").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
   </script>
-
-  <!-- sidebar script end -->
+  <!-- sidebar script ends -->
 </body>
 
 </html>
