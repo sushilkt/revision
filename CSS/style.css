@@ -9,7 +9,7 @@
   position: relative;
   height: 8rem;
 }
-@media screen and (max-height: 550px) {
+@media screen and (max-width: 768px) {
   .heading-image{height:2rem;}
 
 }
@@ -260,7 +260,7 @@ border-color: white;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 550px) {
+@media screen and (max-width: 768px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
@@ -271,7 +271,7 @@ border-color: white;
 #stra{
 padding: 10px;}
 /* for mobile */
-@media screen and (max-height: 550px) {
+@media screen and (max-width: 768px) {
   #stra{padding-left: 5px;}
   .ul{padding-left: 2px;}
   .ol{padding left:5px;}
