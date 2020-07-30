@@ -9,7 +9,7 @@
   position: relative;
   height: 8rem;
 }
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 550px) {
   .heading-image{height:2rem;}
 
 }
@@ -260,21 +260,37 @@ border-color: white;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 550px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
 /* sidebar end */
 .mainbody{padding-left: 5px;}
 
-
+/* main contnet block styling start */
 #stra{
 padding: 10px;}
+/* for mobile */
+@media screen and (max-height: 550px) {
+  #stra{padding-left: 5px;}
+  .ul{padding-left: 2px;}
+  .ol{padding left:5px;}
+
+}
+/* mail contet block styling end  */
+
 .panel-title a{color:grey;}
 @media screen and (max-height: 450px) {
-  .panel-title{font-size: 0.5rem;}
+  .panel-title{font-size: 1.2rem;}
 
 }
 .list-c1{list-style-type: square;}
   .list-c2{list-style-type: disc;}
     .list-c3{list-style-type: circle;}
+
+    /* stats styling  */
+
+    @media screen and (max-height: 450px) {
+      .table{font-size: 0.5rem;
+      overflow: auto;}
+}
