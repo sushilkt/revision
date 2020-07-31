@@ -75,7 +75,7 @@ border-color: white;}
   cursor: pointer;
   user-select: none;/* Prevent text selection */
   color:blue;
-  
+
 }
 
 /* Create the caret/arrow with a unicode, and style it */
@@ -301,6 +301,9 @@ padding: 10px;}
   .list-c2{list-style-type: disc;}
     .list-c3{list-style-type: circle;}
     .list-none{list-style-type: none;}
+
+
+    .table{width:90%;}
 
 /* main contet block styling end  */
 
