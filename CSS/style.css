@@ -73,20 +73,29 @@ border-color: white;}
 /* Style the caret/arrow */
 .caret {
   cursor: pointer;
-  user-select: none; /* Prevent text selection */
+  user-select: none;/* Prevent text selection */
+  color:blue;
+  
 }
 
 /* Create the caret/arrow with a unicode, and style it */
 .caret::after {
   content:"\25B7";
   color: blue;
-  display: inline-block;
+    display: inline-block;
   margin-right: 6px;
+  margin-left: 6px;
+
+
 }
 
 /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
 .caret-down::after {
   transform: rotate(90deg);
+}
+.caret-down{
+  color:black;
+  background-color:lightgrey;
 }
 
 /* Hide the nested list */
@@ -287,6 +296,11 @@ padding: 10px;}
 .panel-body ol{padding-left:20px;}
 .panel-body ul{padding-left:10px;}
 .panel-body p{margin-bottom: 5px;}
+/* list */
+.list-c1{list-style-type: square;}
+  .list-c2{list-style-type: disc;}
+    .list-c3{list-style-type: circle;}
+    .list-none{list-style-type: none;}
 
 /* main contet block styling end  */
 
@@ -296,9 +310,7 @@ padding: 10px;}
 
 
 
-.list-c1{list-style-type: square;}
-  .list-c2{list-style-type: disc;}
-    .list-c3{list-style-type: circle;}
+
 
     /* stats styling  */
 
