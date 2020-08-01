@@ -77,54 +77,49 @@
 <tr>
   <th>name</th>
   <th>Carbon %</th>
-  <th>application</th>
-</tr>
+  </tr>
 <tr>
   <td>Wrought Iron</td>
   <td>  < 0.008</td>
-  <td>Very soft material</td>
-</tr>
+  </tr>
 <tr>
   <td>Low Carbon Steel</td>
   <td> < 0.30</td>
-  <td>Also called mild steel or machine steel. Does not contain enough carbon to be hardened, but can be case hardened. <br> Used for parts, which do not need to be hardened, like nuts, bolts, washers, sheet steel, and shafts.<br> Also used in structural steel and machine tool frames.</td>
-</tr>
-<tr>
+  <tr>
   <td>Medium-carbon Steel</td>
   <td>0.30–0.60</td>
-  <td>May be hardened. Used where greater tensile strength than low-carbon steel is needed. <br> Used for tools like hammers, wrenches, and screwdrivers, which are drop-forged and then hardened.</td>
-</tr>
-<tr>
+  <tr>
   <td>High-carbon Steel</td>
   <td>0.60–1.7</td>
-  <td>May be hardened. Also known as tool steel. <br> Used for cutting tools, punches, taps, dies, reamers, and drills.</td>
-</tr>
-<tr>
+  <tr>
   <td>High-speed Steel</td>
   <td>0.85–1.5</td>
-  <td>Hardenable. Used for lathe and milling machine cutting tools and drill bits. <br> Retains hardness and cutting edge at red heat.<br>alloying elements are used to improve proprty   </td>
-</tr>
-<tr>
+  <tr>
   <td>Cast Iron</td>
   <td>2-4</td>
-  <td>Cannot be hardened, but available in several forms with differing properties</td>
-</tr>
-<tr>
+  <tr>
   <td>Pig Iron</td>
   <td>4-6</td>
-  <td></td>
-</tr>
+  </tr>
 <tr>
   <td>Cementite Fe3C</td>
   <td>>6</td>
-  <td></td>
-</tr>
-
+  </tr>
 </table> </li>
+<li> <span class="caret"> Steel type details</span>
+<ul class="list-c2 nested">
+  <li><em>Low Carbon Steel :</em> Also called mild steel or machine steel. Does not contain enough carbon to be hardened, but can be case hardened.
+Used for parts, which do not need to be hardened, like nuts, bolts, washers, sheet steel, and shafts.
+Also used in structural steel and machine tool frames.</li>
+  <li> <em>Medium-carbon Steel:</em> May be hardened. Used where greater tensile strength than low-carbon steel is needed.
+Used for tools like hammers, wrenches, and screwdrivers, which are drop-forged and then hardened.  </li>
+  <li> <em>High-carbon Steel</em>May be hardened. Also known as tool steel.
+Used for cutting tools, punches, taps, dies, reamers, and drills. </li>
+  <li> <em>High-speed Steel</em>Hardenable. Used for lathe and milling machine cutting tools and drill bits.
+Retains hardness and cutting edge at red heat.
+alloying elements are used to improve proprty </li>
 
-
-
-
+</ul> </li>
                 <li><span class="caret">Iron-Carbon diagram</span>
                   <ul class="list-c2 nested">
                     <li>importance :diagram expalin following three related things </li>
@@ -261,7 +256,7 @@
 <img style="width: 80%;"src="images/ironperiodictable.png" alt="periodic table">
 </p></li>
 <li>  <span class="caret">Alloying Summary</span>
-<table class="table nested">
+<table class="table nested" >
   <tr>
     <th>property</th>
     <th>C</th>
@@ -407,9 +402,100 @@
             <div class="panel-body">
               <!-- text1 starts -->
               <ol>
-                <li>trends </li>
-                <li>loan</li>
-                <li>ratio</li>
+                <li> <span class="caret">Theory</span>
+                  <ul class="nested list-c2">
+                    <li> strip enters a stand when, <em>friction force >= force pushing out of stands</em>. <br>
+                      <img src="images/rollingbiteangle.png" alt="biteangle">
+                      <br> Pulling force = friction force*cos&alpha;, where &mu;=coeff of frcition of steel and roll , &alpha;=bite angle
+                      <br> Pushing Force=N*sin &alpha; , where N=normal force exereted by rolls. </li>
+                      <li> <em>rolling boundary condition :</em> <mark> &mu;*N*cos&alpha;=N*sin&alpha;</mark></li>
+                        <li> for rolling <mark> &mu;=tan&alpha;</mark> </li>
+                        <li>for heigth reduction both forces add up , so compression force = &mu;*n*sin&alpha;+N*Cos&alpha;</li>
+ </li>
+
+                   <li>max reduction possible,<mark> &delta;h=&mu;<sup>2</sup> r </mark>, where &delta;h=height reduction, ,r=work roll radius;
+                     <li>max reduction is dependent on roll diameter and coeff of friction</li>
+
+                   <li>friction forces changes direction at neutral point.  <br>
+                     <img src="images/rollingfriction.png" alt="rolling friction"> <br>
+                     at entering material speed Vr is less than roll speed, friction force is in rolling direction.
+                   <br> at neutral point material speed =roll speed , here friction force is 0.
+                 <br> while exiting material speed Vf more than roll speed and friction force is opposite to rolling direction </li>
+               <li> <mark> forward slip = (Vf-Vr)/Vr</mark> </li>
+
+                   <li>roll pressure distribution  as shown below , it is denoated by p
+                    <br> <img src="images/rollingpressure.png" alt="rolling pressure">
+                    <br> it is broken in two parts , area under shade is force required to overcome friction
+                    <br>area below dashed line is force required for thickness reduction
+                   </li>
+                     <li>metal undergoes plastic deformation and roll undergoes very less elastic deformation</li>
+                   <li>force calculation, F= p*strip width * length of contact arc
+                   <br> <mark>force=p*b*L <sub>p</sub></mark>  , where L <sub>p</sub> is project contact arc length
+                 <br> L <sub>p</sub>=Sqrt(R* &delta;h) </li>
+               <li><mark>force=p*b* sqrt(R*&delta;h)</mark>  </li>
+                    <li>volume in conserved hence . A1V1=A2V2. this can be used to find R factor</li>
+
+                  </ul>
+                </li>
+                <li><span class="caret">main equation</span>
+                  <ol class="nested">
+                    <li>max reduction    :&delta;h max= &mu;<sup>2</sup> R </mark> </li>
+                    <li>coeff of friction:&mu;=tan&alpha;</li>
+                    <li>angle of contact &alpha;: tan&alpha;=&radic;(&delta;h/R)</li>
+                    <li>arc of contact    : L<sub>p</sub>=&radic;(&delta;h*R)</li>
+                    <li>roll force        : F =Pavg*b*L<sub>p</sub>=Pavg*b* &radic;(R*&delta;h)</mark>, P depends of roll material</li>
+                    <li>torque            : T= F*a*L<sub>p</sub></li>
+                    <li>power              :P=(2*&pi;*N*T)/60 : 2 as both upper and lower roll.</li>
+
+                  </ol>
+                </li>
+                <li><span class="caret">Metallurgy of rolling</span>
+                 </li>
+                 <li><span class="caret">Roll and guide</span>
+                   <ul class="nested list-c2">
+                     <li> <span class="caret">Rolls(arbour is the shaft)</span>
+                       <ul class="list-c3 nested">
+                         <li>HSS , high speed steel</li>
+                         <li>SG roll : spherical graphite roll</li>
+                         <li>TC: tungsten carbide/ solid TC is used only in samll rolls like NTM</li>
+                         <li>Combi roll: arbor is steel for flexibility , outer layer is tugnsten carbide , methods of fixing :</li>
+                         <ul class="list-c3">
+<li>Clamping: failure prone</li>
+<li>heating and then shrink fit: failure prone</li>
+<li>CIC: cast in carbide , casting it along with steel</li>
+                         </ul>
+
+
+
+                       </ul>
+                     </li>
+                     <li> <span class="caret">Guide</span>
+                       <ul class="list-c3 nested">
+                         <li>static guide</li>
+                         <li>RE: roller entry</li>
+                         <li>RTD: delivery</li>
+                       </ul>
+                     </li>
+                     <li> <span class="caret">shear</span>
+                       <ul class="list-c3 nested">
+                         <li>cut position</li>
+                         <li>home position</li>
+                         <li>sync position</li>
+                         <li>lead speed: it is some time added as shaer might lose speed on contact with material , genraly done in thicker section</li>
+                       </ul>
+                     </li>
+                     <li> <span class="caret">pinch roll</span>
+                       <ul class="list-c3 nested">
+                         <li>Speed control mode</li>
+                         <li>Torque control mode</li>
+                         <li>lead speed</li>
+
+                       </ul>
+                     </li>
+                   </ul>
+                  </li>
+                <li><span class="caret">type of equipments</span>
+                 </li>
                 <li></li>
               </ol>
               <!-- text1 ebds -->
