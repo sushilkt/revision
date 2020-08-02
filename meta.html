@@ -356,7 +356,7 @@ alloying elements are used to improve proprty </li>
 <ul class="nested list-c3">
   <li> <span class="caret">Boron-B:</span> <p class="nested"> Boron is added to steel in amounts of 0.0005 to 0.003% to improve hardenability. In combination with other alloying elements, boron acts as an "intensifier", increasing the depth of hardening during quenching </p> </li>
   <li> <span class="caret">Carbon-C:</span> <p class="nested">Produces the properties in steel that give it strength. As carbon content increases, there is a corresponding increase in tensile strength and hardness. Additionally, as carbon content  increases,steel becomes increasingly responsive to heat treatment.  </p> </li>
-  <li> <span class="caret">Nitrogen-N</span> <p class="nested">  </p> </li>
+  <li> <span class="caret">Nitrogen-N</span> <p class="nested">Strain ageing has embrittlement effect which takes place after cold deformation by diffusion of nitrogen in steel. Hence, there is limitation stated in some design codes to restrict the nitrogen content of steel to 0.012%.   </p> </li>
   <li> <span class="caret">Alumnium-Al:</span> <p class="nested">When added to molten steel, mixes very quickly with any undissolved oxygen and is therefore considered one of the most common deoxidizers in making steel. Aluminum also is used to produce a fine grain structure and to control grain growth  </p> </li>
   <li> <span class="caret">Silicon-Si:</span> <p class="nested">Is the most common deoxidizing agent. In amounts up to 1% it has a marked strengthening and toughening effect. In higher amounts it produces electrical resistance and gives high magnetic permeability.  </p> </li>
   <li> <span class="caret">Phosphorus-P</span> <p class="nested">Is seldom deliberately added to steel but is carried as a residual or incidental element. When it is added it is usually for the purpose of machinability. Phosphorous is present in all steels and tends to increase resistance to corrosion while increasing yield strength.  </p> </li>
@@ -449,7 +449,37 @@ alloying elements are used to improve proprty </li>
 
                   </ol>
                 </li>
-                <li><span class="caret">Metallurgy of rolling</span>
+                <li><span class="caret">Metallurgy of  rolling</span>
+                  <ul class="list-c2 nested">
+                   <li> HOT Rolling </li>
+                   <ul class="list-c3 ">
+                     <li>better to roll in austenite , which is mallable due to FCC structure</li>
+                     <li>easier to roll as &mu; of hot metal is more </li>
+                     <li>rolling of any shape is possible .</li>
+                     <li>less power and more production rate.</li>
+                     <li>hot rolling grains are broken and new finer and better aligned grains are formed, so temperature to be higher than recrystalization temperature. </li>
+                     <li>sulphur causes hort shortness and hence meting at higher temp</li>
+
+                     <li>problem:controlling spread is challenge, dimension control is not as accurate as cold roll</li>
+                     <li>problem:many surface defects like rolling of scale and impurity </li>
+                     <li>internal defects and shape defects , like waviness ,cracks, fish tail</li>
+                     <li>Minimum Tension Control: works only on head / compare load when, head has not entered upstream stand , vs when head has just entered upstream stand . </li>
+                     <li>loop control : works in body/ help of loop sacnner / vertical and horizontal looper</li>
+
+                   </ul>
+                   <li>COLD Rolling</li>
+                   <ul class="list-c3 ">
+                     <li> better physical dimension control and less spread.</li>
+                     <li> less reduction as &mu; of cold steel is less, also limitation in giving shape. more power less production rate .</li>
+                      <li> better surface finish </li>
+                     <li>some lubricants can be used as temperature is less, also it is clean so not impurity or scale rolling .</li>
+                     <li>strain hardeninig of stell can be done , by elastic deformation <br>
+                       <img src="images/Metastrainhard.jpg" alt="strainhard">
+                     </li>
+
+                   </ul>
+
+                  </ul>
                  </li>
                  <li><span class="caret">Roll and guide</span>
                    <ul class="nested list-c2">
@@ -512,19 +542,104 @@ alloying elements are used to improve proprty </li>
           <div id="collapse2" class="panel-collapse collapse">
             <div class="panel-body">
               <!-- text 2 starts++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-              <ul>
+              <ul class="list-c1">
                 <li> <span class="caret"> Long products parameter </span>
 <ol class="nested">
-  <li> <span class="caret"> Physical </span>
+  <li> <span class="caret"> Mechanical </span>
+    <ul class="list-c2 nested">
+      <li>YS: yield strength / unit: Mpa</li>
+      <li>UTS: ultimate tensile strength /unit: Mpa</li>
+      <li>UTS/YS / unit: ratio </li>
+      <li>% elongation</li>
+      <li>Bend test :To check the bendability as there are reasons for bend failure like cracks , defect etc / Mandrel dia is important</li>
+      <li>Rebend test :Purpose is to measure the effect of strain ageing on steel which cause embrittlement,which takes place after cold deformation by diffusion of nitrogen in steel/ Mandrel dia is important/ bend 90 degree,left in hot water for 1hour , bend back to 20 degree. </li>
+
+
+    </ul>
   </li>
   <li> <span class="caret"> Chemistry </span>
+    <ul class="list-c2 nested">
+      <li>C% </li>
+        <li>P%</li>
+        <li>S%</li>
+        <li>P+S %</li>
+      <li>Carbon equivalent: 0.42 for plain carbon steel <br> CE=C+(Mn/6)  <br> more accurate CE=C+{Mn/6}+{}(CR+Mo+V)/5}+{(Ni+Cu)/15} </li>
+      </ul>
+  </li>
+  <li> <span class="caret"> Size </span>
+    <ul class="list-c2 nested">
+      <li>Weight Tolerance: {(stand weight-measured weight)/measured weight} / all weights are per meter / TSL standard 0 to -3% </li>
+      <li>Length Tolerance: TSL standard 0 to +50mm </li>
+      </ul>
+  </li>
+  <li> <span class="caret"> Surface </span>
+    <ul class="list-c2 nested">
+      <li>AR value:Ar value is  termed as Mean Projected Rib Area per unit length / value =1.2 to 2.4 as per section</li>
+      <li>Ar value={(2*Ltr*Dtr*Sin&theta;)/Str} <br> Dtr - Depth of transverse Ribs
+<br>  Ltr -Length of transverse rib
+<br>Str -spacing of transverse rib
+  <br> &theta; - and Angle of inclination
+  <br>
+  <table class="table">
+    <tr>
+      <td>10mm</td>
+      <td>Ar 1.2</td>
+    </tr>
+    <tr>
+      <td>12mm</td>
+      <td>Ar 1.8</td>
+    </tr>
+    <tr>
+      <td>16mm</td>
+      <td>Ar 2.4</td>
+    </tr>
+  </table>
+
+</li>
+      <li>Bond Strength: pull out test , not done frequently</li>
+      </ul>
   </li>
 </ol>
 </li>
+<li><span class="caret"> Table for standard </span>
+<p class="nested">
+  <img style="width:80%;"src="images/steellpstandard.png" alt="lp standard">
+</p>
+</li>
 <li><span class="caret"> Long products defects </span>
 <ol class="nested">
-  <li>fish tail</li>
-  <li> wish rib out</li>
+  <li><span class="caret">Shape/Surface</span>
+<ul class="nested list-c3">
+  <li>Rib washout</li>
+  <li>One side LRH</li>
+  <li>High LRH , Fish Tail</li>
+  <li>Roll cross uneven shape</li>
+  <li>Ovality</li>
+  <li>Lump</li>
+  <li>Pad mark</li>
+  <li>Scrath mark</li>
+  <li>Poor Embrosing</li>
+  <li>Low Ar value</li>
+  <li>Camber</li>
+  <li>Poor end cut</li>
+</ul>
+   </li>
+   <li><span class="caret">Structural Defect</span>
+ <ul class="nested list-c3">
+   <li>No quench</li>
+   <li>Thorough Quench</li>
+   <li>Horse Shoe</li>
+   <li>Cracking during bending</li>
+ </ul>
+    </li>
+    <li><span class="caret">Handling Defect</span>
+  <ul class="nested list-c3">
+    <li>Gas Cut</li>
+    <li>Short bar</li>
+    <li>Short Layer</li>
+
+  </ul>
+     </li>
 </ol>
 </li>
 <li><span class="caret"> Rusting </span>
