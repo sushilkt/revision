@@ -307,9 +307,20 @@ padding: 10px;}
 
 /* main contet block styling end  */
 
+/* suatinbility timeline */
 
 
+.timeline-sustain{text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
 
+.timeline1{padding: 0;
+
+background-color:pink;}
+
+  ;}
+/* suatinbility timeline */
 
 
 
