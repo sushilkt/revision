@@ -294,10 +294,10 @@
                   <ol class="nested">
                     <li>p value less than 0.05 is <em>significant</em> </li>
                     <li>F test P value : if P less than 0.05 then y depends on atleast one of X </li>
-                      <li>check form plot wheter resuduals is normal and has no pattern</li>
+
                                             <li>indiviudla X , t test p value : p less than 0.05, then y depends on that x</li>
                       <li>if none of x has p value lesss tha 0.05 but overall f test is sigificant , then y depends on combinaition of x, i.e multiple x are related  </li>
-                    <li>corelation of multiple x can be tested by corelation or VIF score</li>
+                    <li>correlation of multiple x can be tested by corelation or VIF score</li>
                     <li> <span class="caret">VIF: variance influence factor </span>
                       <ul class="nested">
                         <li>VIF=1/(1-Rsqaure)</li>
@@ -316,6 +316,16 @@
                       <li>forward selection: go on adding variable according to correlation ,till Rsq-adjusted is max</li>
                       <li>Backward elimination : start with all X , then drop starting with least relted x, stop when Rsq-adjusted is max</li>
                     </ol> </li>
+                      <li> checking residual plot is must,  to check for :</li>
+<ul class="list-c3">
+  <li>Pattern</li>
+  <li>outlier , outlie rmight effect result and hence important to inspect </li>
+  <li>residuals have normal distribution</li>
+  <li>residual variance is constant</li>
+  <li> <img  style="width:90%;"src="images/lrresidual.png" alt="residualplot"> </li>
+</ul>
+
+
                   </ol>
                 </li>
 
