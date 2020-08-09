@@ -1,8 +1,9 @@
 /* heading strat */
 .heading-image,.heading-image1{
-  background-image: url("images/background1.png");
+  
   background-image: url("https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background-color: red;
+
+  background-color: Grey;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -297,9 +298,9 @@ padding: 10px;}
 .panel-body ul{padding-left:10px;}
 .panel-body p{margin-bottom: 5px;}
 /* list */
-.list-c1{list-style-type: square;}
+.list-c1{list-style-type:square;}
   .list-c2{list-style-type: disc;}
-    .list-c3{list-style-type: circle;}
+    .list-c3{list-style-type: circle; }
     .list-none{list-style-type: none;}
 
 

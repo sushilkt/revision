@@ -48,13 +48,17 @@
   <!-- sidebar index starts here -->
   <div id="mySidebar2" class="sidebar1">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">×</a>
-  <a href="#gmp-stra-head1">Introduction</a>
-  <a href="#gmp-stra-head2">Defining business</a>
-  <a href="#gmp-stra-head3">Situtaion Analysis</a>
-  <a href="#gmp-stra-head4">Customer segmentation target</a>
-  <a href="#gmp-stra-head5">Competetive advantages</a>
-  <a href="#gmp-stra-head6">Growth Direction</a>
-  <a href="#gmp-stra-head7">Implementation review</a>
+  <a href="#gmp-stats-head1">Probablity and distributions</a>
+  <a href="#gmp-stats-head2">Sampling and estimate</a>
+  <a href="#gmp-stats-head3">Hypothesis testing</a>
+  <a href="#gmp-stats-head4">CHI-Square,Anova and variance analysis</a>
+  <a href="#gmp-stats-head5">Payoff / Decision tree</a>
+  <a href="#gmp-stats-head6">Data Preparation</a>
+  <a href="#gmp-stats-head7">Regression</a>
+  <a href="#gmp-stats-head8">Logistic Regression/random forest</a>
+  <a href="#gmp-stats-head7">Clustering</a>
+  <a href="#gmp-stats-head7">Process control and TQM</a>
+
   </div>
   <!-- sidebar index ends here  -->
   <!-- sidebar ends -->
@@ -65,7 +69,7 @@
     <!-- matter begins+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <div class="subject box-responsive" id="stra">
 <!-- first heading++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-      <div class="panel-group" id="gmp-stra-head1">
+      <div class="panel-group" id="gmp-stats-head1">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
@@ -104,7 +108,7 @@
         </div>
       </div>
       <!-- heading 2++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-      <div class="panel-group" id="gmp-stra-head2">
+      <div class="panel-group" id="gmp-stats-head2">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
@@ -190,7 +194,7 @@
         </div>
       </div>
       <!-- heading3+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-      <div class="panel-group" id="gmp-stra-head3">
+      <div class="panel-group" id="gmp-stats-head3">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
@@ -207,11 +211,11 @@
         </div>
       </div>
       <!-- heading 4++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-      <div class="panel-group" id="gmp-stra-head4">
+      <div class="panel-group" id="gmp-stats-head4">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" href="#collapse4">CHI-Square and variance analysis</a>
+              <a data-toggle="collapse" href="#collapse4">CHI-Square,Anova and variance analysis</a>
             </h4>
           </div>
           <div id="collapse4" class="panel-collapse collapse">
@@ -224,11 +228,11 @@
         </div>
       </div>
       <!-- heading5+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-      <div class="panel-group" id="gmp-stra-head5">
+      <div class="panel-group" id="gmp-stats-head5">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" href="#collapse5">Use of Stats ,decision theory</a>
+              <a data-toggle="collapse" href="#collapse5">Payoff / Decision tree</a>
             </h4>
           </div>
           <div id="collapse5" class="panel-collapse collapse">
@@ -241,7 +245,7 @@
         </div>
       </div>
       <!-- heading6+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-      <div class="panel-group" id="gmp-stra-head6">
+      <div class="panel-group" id="gmp-stats-head6">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title" >
@@ -258,7 +262,7 @@
         </div>
       </div>
       <!-- heading 7++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-      <div class="panel-group" id="gmp-stra-head7">
+      <div class="panel-group" id="gmp-stats-head7">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
@@ -336,7 +340,7 @@
         </div>
       </div>
       <!-- heading 8++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-      <div class="panel-group" id="gmp-stat-head8">
+      <div class="panel-group" id="gmp-stats-head8">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
@@ -374,17 +378,80 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <a data-toggle="collapse" href="#collapse10">Process control TQM</a>
+              <a data-toggle="collapse" href="#collapse10">Process control & TQM</a>
             </h4>
           </div>
           <div id="collapse10" class="panel-collapse collapse">
             <div class="panel-body">
               <!-- text 10 strats here ++++++++++++++++++++++++++++++++++++++++ -->
-              <ol>
-                <li>Statistical process control , Runc chart </li>
-                <li> annova and gauge R&R</li>
+              <ul class="list-c1">
+                <li> <span class="caret">Basic</span>
+                  <table class="table nested">
+                    <tr>
+                      <th>symbol</th>
+                      <th>meaning</th>
+                    </tr>
+                    <tr>
+                      <td>n</td>
+                      <td>no of reading/observation in a sample </td>
+                      </tr>
+                      <tr>
+                        <td>k</td>
+                        <td>no of sample </td>
+                        </tr>
+                    <tr>
+                      <td>X&#772;</td>
+                      <td>average of sample</td>
+                      </tr>
+                      <tr>
+                        <td>R</td>
+                        <td>Sample range : max value -min value</td>
+                        </tr>
+                    <tr>
+                      <td>X&#772;&#772;</td>
+                      <td> average of sample average </td>
+                    </tr>
+                    <tr>
+                      <td>R&#772;</td>
+                      <td> average of sample ranges</td>
+                    </tr>
+                    <tr>
+                      <td>d<sub>2</sub>/d<sub>3</sub></td>
+                      <td>depends on n</td>
+                    </tr>
 
-              </ol>
+
+                  </table>
+                </li>
+                <li> Xbar-chart</li>
+                <ul class="list-none">
+
+                <li>&sigma;=R&#772;/(d<sub>2</sub>*&#x221A;n)</li>
+                <li>UCL=X&#772;&#772;+3&sigma;</li>
+                <li>LCL=X&#772;&#772;-3&sigma;</li>
+              </ul>
+              <li> R-chart</li>
+              <ul class="list-none">
+
+              <li>&sigma;<sub>R</sub>= d<sub>3</sub>*&sigma;= d<sub>3</sub>* {R&#772;/(d<sub>2</sub>*&#x221A;n)}</li>
+              <li>UCL=X&#772;&#772;+3&sigma;<sub>R</sub></li>
+              <li>LCL=X&#772;&#772;-3&sigma;<sub>R</sub></li>
+            </ul>
+
+
+
+                <li>P chart : used when measured quantity is <em>attribute</em> i.e yes/no , ok, notok  </li>
+                <li> <span class="caret">Gauge R&R</span>
+<ul class="list-c2 nested">
+  <li>to know wheter variance is due to parts/operator/instrumenst</li>
+  <li>uses annova variance of withing and among group</li>
+  <li>sample should be randomly taken  </li>
+  <li>all skill level operator should be used to remove bias</li>
+
+</ul>
+                </li>
+
+              </ul>
               <!-- text 10 eds here ++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
             </div>
           </div>
